@@ -39,7 +39,7 @@ if(isset($_POST["entreg_id"]) && !empty($_POST["entreg_id"])){
 	$_GET["entreg_id"] = trim($_GET["entreg_id"]);
     if(empty($_GET["entreg_id"])){
         // URL doesn't contain id parameter. Redirect to error page
-        header("location: /errorPage/error.php");
+        header("location: error.php");
         exit();
     }
 }
