@@ -13,7 +13,7 @@ if ($result = mysqli_query($link, $query)) {
             printf("Error loading character set $row[1]: %s\n", $link->error);
             exit();
         } else {
-            // printf("Current character set: %s", $link->character_set_name());
+            printf("Current character set: %s", $link->character_set_name());
         }
     }
 }
